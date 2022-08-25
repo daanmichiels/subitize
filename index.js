@@ -48,7 +48,7 @@ function draw_dots(ctx, w, h, radius, fade) {
 		} else {
 			ctx.fillStyle = dot['color'];
 		}
-		ctx.arc(w / 2 + dot['x'] * 0.9 * radius, h / 2 + dot['y'] * 0.9 * radius, dot['r'] * radius, 0, 2 * Math.PI);
+		ctx.arc(w / 2 + dot['x'] * 0.9 * radius, h / 2 + dot['y'] * 0.9 * radius, dot['r'] * 0.9 * radius, 0, 2 * Math.PI);
 		ctx.fill();
 	}
 	ctx.fillStyle = "#000000";
